@@ -53,10 +53,10 @@ judge0:
 
 app:
   frontend:
-    redirect-uri: "http://localhost:5173/oauth2-success"
+    redirect-uri: "https://code-quest-frontend-three.vercel.app/oauth2-success"
 
 cors:
-  allowed-origins: "http://localhost:5173"
+  allowed-origins: "https://code-quest-frontend-three.vercel.app"
   allowed-methods: "GET,POST,PUT,DELETE,OPTIONS"
   allowed-headers: "*"
   allow-credentials: true
