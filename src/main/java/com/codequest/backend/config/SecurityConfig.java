@@ -48,7 +48,7 @@ public class SecurityConfig {
                 .cors(cors -> cors.and())
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
-                        .requestMatchers("/login/**", "/signup/**").authenticated()
+                        .requestMatchers("/public/login/**", "/public/signup/**").authenticated()
                         .requestMatchers("/api/profile/**","/api/interview-rooms").authenticated()
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")
                         .requestMatchers("/api/interviewer/**").hasRole("INTERVIEWER")
